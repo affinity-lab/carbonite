@@ -5,6 +5,7 @@
   "author": {
     "name": "Gergely Laborci"
   },
+  "type": "module",
   "dependencies": {
     "@affinity-lab/util": "github:affinity-lab/util",
     "mysql2": "^2.3.3",
