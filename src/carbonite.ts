@@ -9,6 +9,7 @@ export default class Carbonite {
 
 	static async initialize(dataSource: DataSource) {
 		for (let moduleManager of Carbonite.moduleManagers) await moduleManager.initialize(dataSource);
+		return dataSource;
 	}
 }
 
