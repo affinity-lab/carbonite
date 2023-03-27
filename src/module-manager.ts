@@ -1,4 +1,4 @@
-import {DataSource} from "typeorm";
+import type {DataSource} from "typeorm";
 import Carbonite from "./carbonite";
 
 export default abstract class ModuleManager {

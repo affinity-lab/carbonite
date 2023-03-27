@@ -1,10 +1,14 @@
-import {BaseEntity, In, PrimaryGeneratedColumn} from "typeorm";
+import {BaseEntity, In, PrimaryGeneratedColumn, type SaveOptions} from "typeorm";
 import {transfer} from "@affinity-lab/util";
 
 
 export default class Atom extends BaseEntity {
 
 	@PrimaryGeneratedColumn() id: number;
+
+	public save(): Promise<this> {
+		return super.save({transaction: false});
+	}
 
 	static async pick<T extends Atom>(this: { new(): T; } & typeof Atom, id: number): Promise<T | null> {
 		if (typeof id !== "number" || isNaN(id)) return null;

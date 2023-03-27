@@ -1,15 +1,11 @@
 {
   "name": "@affinity-lab/carbonite",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "main": "index.js",
   "author": {
     "name": "Gergely Laborci"
   },
-  "type": "module",
   "dependencies": {
-    "@affinity-lab/util": "github:affinity-lab/util",
-    "mysql2": "^2.3.3",
-    "reflect-metadata": "^0.1.13",
-    "typeorm": "0.3.11"
+    "@affinity-lab/util": "github:affinity-lab/util"
   }
 }

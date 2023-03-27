@@ -1,5 +1,5 @@
-import {DataSource} from "typeorm";
-import ModuleManager from "./module-manager";
+import type {DataSource} from "typeorm";
+import type ModuleManager from "./module-manager";
 
 export default class Carbonite {
 
